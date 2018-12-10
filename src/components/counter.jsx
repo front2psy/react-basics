@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-  handleDecrease = () => {
-    this.setState({
-      value: this.state.value > 0 ? this.state.value - 1 : 0
-    });
-  };
-
   componentDidUpdate(prevProps, prevState) {
     console.log("prevProps", prevProps.counter.value);
     console.log("presentProps", this.props.counter.value);
@@ -28,12 +22,6 @@ class Counter extends Component {
           className="btn btn-secondary btn-sm m-2"
         >
           Increment
-        </button>
-        <button
-          onClick={this.handleDecrease}
-          className="btn btn-secondary btn-sm"
-        >
-          Decrease
         </button>
         <button
           onClick={() => this.props.onDelete(this.props.counter.id)}
