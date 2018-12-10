@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Topic
+
+In the project, we covered the basic react things, such as `jsx`, `class/function components`, `communications between components` and `lifecycle` etc.
+
 ## Available Scripts
 
 In the project directory, you can run:
